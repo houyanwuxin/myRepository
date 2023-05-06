@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <context-param>
+        <param-name>key1</param-name>
+        <param-value>value1</param-value>
+    </context-param>
+    <context-param>
+        <param-name>key2</param-name>
+        <param-value>value2</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.bai.servlet.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>周一</param-name>
+            <param-value>上课</param-value>
+        </init-param>
+        <init-param>
+            <param-name>周五</param-name>
+            <param-value>睡大觉</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/helloServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ContextAttr1</servlet-name>
+        <servlet-class>com.bai.servlet.ContextAttr1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContextAttr1</servlet-name>
+        <url-pattern>/contextAttr1</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet>
+        <servlet-name>RequestAPIServlet</servlet-name>
+        <servlet-class>com.bai.servlet2.RequestAPIServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RequestAPIServlet</servlet-name>
+        <url-pattern>/requestAPIServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ParameterServlet</servlet-name>
+        <servlet-class>com.bai.Request.ParameterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ParameterServlet</servlet-name>
+        <url-pattern>/parameterServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Servlet1</servlet-name>
+        <servlet-class>com.bai.Request.Servlet1</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet1</servlet-name>
+        <url-pattern>/servlet1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Servlet2</servlet-name>
+        <servlet-class>com.bai.Request.Servlet2</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Servlet2</servlet-name>
+        <url-pattern>/servlet2</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>HelloResponse</servlet-name>
+        <servlet-class>com.bai.Response.HelloResponse</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloResponse</servlet-name>
+        <url-pattern>/helloResponse</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>Redirect</servlet-name>
+        <servlet-class>com.bai.Response.Redirect</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Redirect</servlet-name>
+        <url-pattern>/redirect</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
